@@ -7,7 +7,7 @@ env.config()
 passport.use(new GoogleStrategy({
     clientID : process.env.CLIENT_ID,
     clientSecret : process.env.CLIENT_SECRET,
-    callbackURL : "https://mini-crm-backend-zamw.onrender.com/auth/google/callback"
+    callbackURL : "/auth/google/callback"
 }, (accessToken, refreshToken, profile, done) => {
     return done(null, profile);
 }))
