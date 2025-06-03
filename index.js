@@ -20,7 +20,7 @@ env.config();
 connectDb();
 
 app.use(cors({
-    origin : "http://localhost:5173",
+    origin : "https://crm-frontend-sage.vercel.app/",
     credentials : true,
 }))
 
