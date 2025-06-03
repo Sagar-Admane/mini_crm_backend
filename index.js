@@ -40,7 +40,7 @@ app.get("/auth/google", passport.authenticate('google', {scope : ['profile', 'em
 
 app.get("/auth/google/callback", passport.authenticate('google', {
     failureRedirect : '/',
-    successRedirect : 'https://crm-frontend-sage.vercel.app/dashboard'
+    successRedirect : 'https://crm-frontend-sage.vercel.app/#/dashboard'
 }))
 
 app.get('/auth/logout', (req, res) => {
